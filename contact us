@@ -57,11 +57,11 @@
     <h1>Contact Pacific West Marketing Group</h1>
   </header>
 
-  <p>Email: info@pacificwestmktg.com</p>
+  <p>Email: <a href="mailto:anig@pacificwestmktggroup.com">anig@pacificwestmktggroup.com</a></p>
   <p>Phone: (615) 266-6787</p>
   <p>Reach out today to see how we can help your rental shine!</p>
 
-  <form action="mailto:info@pacificwestmktg.com" method="post" enctype="text/plain">
+  <form action="mailto:anig@pacificwestmktggroup.com" method="post" enctype="text/plain">
     <label>Name:</label>
     <input type="text" name="name" required>
     <label>Email:</label>
@@ -75,3 +75,16 @@
   <a class="button" href="about.html">About Us</a>
 </body>
 </html>
+
+✅ Key fixes:
+
+Title and <h1> now say Pacific West Marketing Group.
+All email links updated to anig@pacificwestmktggroup.com
+.
+mailto: in the form matches your active email.
+
+Next step:
+After you upload this, 
+test the contact form. Some browsers require a local mail client for mailto: forms. If it doesn’t send, we can add a Cloudflare form handler or Formspree so it works directly from the site.
+
+Do you want me to make it fully functional online without needing a mail client?
