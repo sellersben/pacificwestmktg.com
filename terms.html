@@ -13,6 +13,28 @@
       padding: 0;
       line-height: 1.6em;
     }
+
+    /* --- NAVIGATION BAR --- */
+    nav {
+      position: sticky;
+      top: 0;
+      background: #0A0A0A;
+      border-bottom: 1px solid #B99B5F;
+      display: flex;
+      justify-content: center;
+      padding: 15px 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: #B99B5F;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 0 20px;
+      font-size: 1.1em;
+      transition: 0.3s;
+    }
+    nav a:hover { color: #ffffff; }
+
     header {
       padding: 80px 20px 40px 20px;
       text-align: center;
@@ -33,6 +55,9 @@
       transition: 0.3s;
     }
     a.button:hover { background: #a88c50; }
+
+    .content { max-width: 900px; margin: 0 auto 60px; padding: 0 20px; text-align: left; }
+
     footer {
       background: #080808;
       padding: 30px 20px;
@@ -42,10 +67,19 @@
     }
     footer a { color: #B99B5F; text-decoration: none; margin: 0 10px; }
     footer a:hover { text-decoration: underline; }
-    .content { max-width: 900px; margin: 0 auto 60px; padding: 0 20px; text-align: left; }
   </style>
 </head>
 <body>
+
+  <!-- NAVIGATION BAR -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="terms.html">Terms of Use</a>
+  </nav>
+
   <header>
     <h1>Terms of Use</h1>
     <a class="button" href="index.html">Home</a>
@@ -79,8 +113,12 @@
 
   <footer>
     &copy; 2026 Pacific West Real Estate Group LLC | 
+    <a href="index.html">Home</a> | 
+    <a href="about.html">About</a> | 
+    <a href="contact.html">Contact</a> | 
     <a href="privacy.html">Privacy Policy</a> | 
     <a href="terms.html">Terms of Use</a>
   </footer>
+
 </body>
 </html>
