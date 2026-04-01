@@ -6,8 +6,8 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      background: #0A0A0A; /* Dark Charcoal */
-      color: #B99B5F; /* Primary Gold */
+      background: #0A0A0A;
+      color: #B99B5F;
       margin: 0;
       padding: 0;
       text-align: center;
@@ -50,6 +50,11 @@
     }
     input[type="submit"]:hover { background: #a88c50; }
     label { display: block; margin-top: 10px; font-weight: bold; }
+    .success-message {
+      color: #a3d9a5;
+      font-weight: bold;
+      margin-top: 20px;
+    }
   </style>
 </head>
 <body>
@@ -61,7 +66,7 @@
   <p>Phone: (615) 266-6787</p>
   <p>Reach out today to see how we can help your rental shine!</p>
 
-  <form action="mailto:benjamins@pacificwestmktggroup.com" method="post" enctype="text/plain">
+  <form action="https://formspree.io/f/xaqlbnjj" method="POST">
     <label>Name:</label>
     <input type="text" name="name" required>
     <label>Email:</label>
@@ -69,10 +74,34 @@
     <label>Message:</label>
     <textarea name="message" rows="5" required></textarea>
     <input type="submit" value="Send Message">
+    <div class="success-message" id="successMessage" style="display:none;">
+      Thanks! Your message has been sent.
+    </div>
   </form>
 
   <a class="button" href="index.html">Back to Home</a>
   <a class="button" href="about.html">About Us</a>
+
+  <script>
+    // Optional: Show a success message without leaving page
+    const form = document.querySelector('form');
+    const successMessage = document.getElementById('successMessage');
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+      fetch(form.action, {
+        method: form.method,
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json' }
+      }).then(response => {
+        if (response.ok) {
+          successMessage.style.display = 'block';
+          form.reset();
+        } else {
+          alert('Oops! There was a problem submitting your form.');
+        }
+      });
+    });
+  </script>
 </body>
 </html>
 
