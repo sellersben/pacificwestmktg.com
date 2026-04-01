@@ -15,12 +15,36 @@
       text-align: center;
       overflow-x: hidden;
     }
+
+    /* --- NAVIGATION BAR --- */
+    nav {
+      position: sticky;
+      top: 0;
+      background: #0A0A0A;
+      border-bottom: 1px solid #B99B5F;
+      display: flex;
+      justify-content: center;
+      padding: 15px 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: #B99B5F;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 0 20px;
+      font-size: 1.1em;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      color: #ffffff;
+    }
+
     header {
-      padding: 120px 20px 80px 20px;
+      padding: 100px 20px 60px 20px;
     }
     img {
       width: 220px;
-      margin-bottom: 50px;
+      margin-bottom: 30px;
     }
     h1 {
       font-size: 3.2em;
@@ -107,6 +131,16 @@
   </style>
 </head>
 <body>
+
+  <!-- NAVIGATION BAR -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="terms.html">Terms of Use</a>
+  </nav>
+
   <header>
     <img src="logo3.png" alt="Pacific West Real Estate Group LLC Logo">
     <h1>Full-Service Luxury Asset Management & Short-Term Rental Optimization</h1>
@@ -145,5 +179,6 @@
     Pacific West Real Estate Group LLC | Big Bear Lake, CA | Phone: <a href="tel:13106477948">(310) 647-7948</a> | Email: <a href="mailto:info@pacificwestmktg.com">info@pacificwestmktg.com</a><br>
     <a href="about.html">About</a> | <a href="contact.html">Contact</a> | <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Use</a>
   </footer>
+
 </body>
 </html>
