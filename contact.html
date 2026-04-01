@@ -14,6 +14,30 @@
       text-align: center;
       line-height: 1.6em;
     }
+
+    /* --- NAVIGATION BAR --- */
+    nav {
+      position: sticky;
+      top: 0;
+      background: #0A0A0A;
+      border-bottom: 1px solid #B99B5F;
+      display: flex;
+      justify-content: center;
+      padding: 15px 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: #B99B5F;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 0 20px;
+      font-size: 1.1em;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      color: #ffffff;
+    }
+
     header { padding: 80px 20px; }
     h1 { font-size: 3em; text-shadow: 1px 1px 2px #000; margin-bottom: 20px; }
     p { font-size: 1.2em; margin: 10px auto; max-width: 700px; }
@@ -30,6 +54,7 @@
       transition: 0.3s;
     }
     a.button:hover { background: #a88c50; }
+
     form { max-width: 500px; margin: 30px auto; text-align: left; }
     input, textarea {
       width: 100%;
@@ -56,6 +81,7 @@
       font-weight: bold;
       margin-top: 20px;
     }
+
     footer {
       background: #080808;
       padding: 30px 20px;
@@ -67,6 +93,16 @@
   </style>
 </head>
 <body>
+
+  <!-- NAVIGATION BAR -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="terms.html">Terms of Use</a>
+  </nav>
+
   <header>
     <h1>Contact Pacific West Real Estate Group LLC</h1>
   </header>
@@ -99,7 +135,7 @@
 
   <footer>
     Pacific West Real Estate Group LLC | Big Bear Lake, CA | Phone: <a href="tel:13106477948">(310) 647-7948</a> | Email: <a href="mailto:info@pacificwestmktg.com">info@pacificwestmktg.com</a><br>
-    <a href="about.html">About</a> | <a href="contact.html">Contact</a> | <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Use</a>
+    <a href="index.html">Home</a> | <a href="about.html">About</a> | <a href="contact.html">Contact</a> | <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Use</a>
   </footer>
 
   <script>
@@ -122,5 +158,6 @@
       });
     });
   </script>
+
 </body>
 </html>
