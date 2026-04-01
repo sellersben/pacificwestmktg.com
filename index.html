@@ -53,6 +53,33 @@
       background: #a88c50;
     }
 
+    /* Core Pillars Section */
+    .core-pillars {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 60px 20px;
+      gap: 20px;
+    }
+    .pillar {
+      background: #0A0A0A;
+      border: 1px solid #B99B5F;
+      border-radius: 12px;
+      padding: 30px 20px;
+      max-width: 280px;
+      flex: 1 1 250px;
+      box-shadow: 0 0 10px #000;
+      text-align: left;
+    }
+    .pillar h3 {
+      font-size: 1.5em;
+      margin-bottom: 15px;
+    }
+    .pillar p {
+      font-size: 1em;
+      line-height: 1.5em;
+    }
+
     /* Testimonials */
     .testimonials {
       max-width: 800px;
@@ -88,11 +115,26 @@
 <body>
   <header>
     <img src="logo.png" alt="Pacific West Logo">
-    <h1>Welcome to Pacific West Real Estate Group LLC</h1>
-    <div class="tagline">Helping Short Term Rental Owners Shine | Branding • Staging • Marketing • 24/7 Support</div>
+    <h1>Full-Service Luxury Asset Management & Short-Term Rental Optimization</h1>
+    <div class="tagline">We provide 5-star hotel standards for premium property owners, ensuring maximum yield through professional staging, 24/7 concierge support, and rigorous regulatory compliance.</div>
     <a class="button" href="about.html">Learn More</a>
     <a class="button" href="contact.html">Contact Us</a>
   </header>
+
+  <div class="core-pillars">
+    <div class="pillar">
+      <h3>Hotel-Grade Operations</h3>
+      <p>Professional cleaning and maintenance protocols that exceed 5-star hospitality standards.</p>
+    </div>
+    <div class="pillar">
+      <h3>Turnkey Logistics</h3>
+      <p>White-glove staging, guest check-in/check-out, and 24-hour on-site tenant support.</p>
+    </div>
+    <div class="pillar">
+      <h3>Regulatory Shield</h3>
+      <p>Comprehensive compliance management for city and state ordinances to protect your investment.</p>
+    </div>
+  </div>
 
   <div class="trust">
     Serving Big Bear Lake, CA ski lodges since 2024 | Over 50+ short-term rentals managed
