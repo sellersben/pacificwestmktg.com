@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Pacific West Marketing Group</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #0A0A0A; /* Dark Charcoal */
+      color: #B99B5F; /* Primary Gold */
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      line-height: 1.6em;
+    }
+    header { padding: 80px 20px; }
+    h1 { font-size: 3em; text-shadow: 1px 1px 2px #000; margin-bottom: 20px; }
+    p { font-size: 1.2em; margin: 10px auto; max-width: 700px; }
+    a.button {
+      display: inline-block;
+      margin: 15px 10px;
+      padding: 15px 30px;
+      background: #B99B5F;
+      color: #0A0A0A;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 1.2em;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    a.button:hover { background: #a88c50; }
+    form { max-width: 500px; margin: 30px auto; text-align: left; }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 6px;
+      border: 1px solid #B99B5F;
+      background: #0A0A0A;
+      color: #B99B5F;
+      font-size: 1em;
+    }
+    input[type="submit"] {
+      background: #B99B5F;
+      color: #0A0A0A;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    input[type="submit"]:hover { background: #a88c50; }
+    label { display: block; margin-top: 10px; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Contact Pacific West Marketing Group</h1>
+  </header>
+
+  <p>Email: info@pacificwestmktg.com</p>
+  <p>Phone: (615) 266-6787</p>
+  <p>Reach out today to see how we can help your rental shine!</p>
+
+  <form action="mailto:info@pacificwestmktg.com" method="post" enctype="text/plain">
+    <label>Name:</label>
+    <input type="text" name="name" required>
+    <label>Email:</label>
+    <input type="email" name="email" required>
+    <label>Message:</label>
+    <textarea name="message" rows="5" required></textarea>
+    <input type="submit" value="Send Message">
+  </form>
+
+  <a class="button" href="index.html">Back to Home</a>
+  <a class="button" href="about.html">About Us</a>
+</body>
+</html>
