@@ -69,10 +69,16 @@
   <form action="https://formspree.io/f/xaqlbnjj" method="POST">
     <label>Name:</label>
     <input type="text" name="name" required>
+
     <label>Email:</label>
     <input type="email" name="email" required>
+
+    <label>Phone:</label>
+    <input type="tel" name="phone" placeholder="(123) 456-7890" required>
+
     <label>Message:</label>
     <textarea name="message" rows="5" required></textarea>
+
     <input type="submit" value="Send Message">
     <div class="success-message" id="successMessage" style="display:none;">
       Thanks! Your message has been sent.
@@ -104,5 +110,3 @@
   </script>
 </body>
 </html>
-
-
