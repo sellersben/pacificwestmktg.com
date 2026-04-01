@@ -55,6 +55,14 @@
       font-weight: bold;
       margin-top: 20px;
     }
+    footer {
+      background: #080808;
+      padding: 30px 20px;
+      margin-top: 60px;
+      font-size: 1em;
+    }
+    footer a { color: #B99B5F; text-decoration: none; margin: 0 10px; }
+    footer a:hover { text-decoration: underline; }
   </style>
 </head>
 <body>
@@ -62,9 +70,9 @@
     <h1>Contact Pacific West Real Estate Group LLC</h1>
   </header>
 
-  <p>Email: <a href="mailto:benjamins@pacificwestmktggroup.com">benjamins@pacificwestmktggroup.com</a></p>
+  <p>Email: <a href="mailto:info@pacificwestmktg.com">info@pacificwestmktg.com</a></p>
   <p>Phone: (310) 647-7948</p>
-  <p>Reach out today to see how we can help your rental shine!</p>
+  <p>Serving Big Bear Lake, CA | Reach out today to see how we can help your rental shine!</p>
 
   <form action="https://formspree.io/f/xaqlbnjj" method="POST">
     <label>Name:</label>
@@ -88,8 +96,13 @@
   <a class="button" href="index.html">Back to Home</a>
   <a class="button" href="about.html">About Us</a>
 
+  <footer>
+    Pacific West Real Estate Group LLC | Big Bear Lake, CA | Phone: (310) 647-7948 | Email: <a href="mailto:info@pacificwestmktg.com">info@pacificwestmktg.com</a><br>
+    <a href="about.html">About</a> | <a href="contact.html">Contact</a> | <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Use</a>
+  </footer>
+
   <script>
-    // Optional: Show a success message without leaving page
+    // Show success message without leaving page
     const form = document.querySelector('form');
     const successMessage = document.getElementById('successMessage');
     form.addEventListener('submit', function(e){
