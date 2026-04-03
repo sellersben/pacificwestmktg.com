@@ -7,13 +7,14 @@
   <meta name="keywords" content="Short term rentals, Airbnb, VRBO, Home staging, Rental marketing, Big Bear Lake, CA">
   <style>
     body {
-      font-family: 'Arial', sans-serif;
+      font-family: Arial, sans-serif;
       background: #0A0A0A;
       color: #B99B5F;
       margin: 0;
       padding: 0;
       text-align: center;
       overflow-x: hidden;
+      line-height: 1.6em;
     }
 
     /* --- NAVIGATION BAR --- */
@@ -35,25 +36,30 @@
       font-size: 1.1em;
       transition: 0.3s;
     }
-    nav a:hover {
-      color: #ffffff;
-    }
+    nav a:hover { color: #ffffff; }
 
+    /* --- HEADER --- */
     header {
-      padding: 100px 20px 60px 20px;
+      padding: 80px 20px 40px 20px;
     }
-    img {
-      width: 220px;
-      margin-bottom: 30px;
+    .logo {
+      max-width: 180px;
+      width: 80%;
+      height: auto;
+      margin-bottom: 15px;
     }
-    h1 {
-      font-size: 3.2em;
-      margin-bottom: 20px;
-      text-shadow: 1px 1px 3px #000;
+    .home-title {
+      font-size: 2.2em;
+      line-height: 1.2em;
+      letter-spacing: 0.5px;
+      font-weight: 600;
+      margin: 0 0 20px 0;
+      text-shadow: 1px 1px 2px #000;
     }
     .tagline {
-      font-size: 1.5em;
-      margin-bottom: 40px;
+      font-size: 1.2em;
+      max-width: 700px;
+      margin: 0 auto 40px auto;
       opacity: 0;
       animation: fadeInUp 2s forwards;
     }
@@ -61,6 +67,13 @@
       0% { opacity: 0; transform: translateY(20px);}
       100% { opacity: 1; transform: translateY(0);}
     }
+
+    @media (max-width: 600px) {
+      .logo { max-width: 140px; margin-bottom: 10px; }
+      .home-title { font-size: 1.6em; line-height: 1.3em; }
+      .tagline, .trust, .pillar p { font-size: 1em; }
+    }
+
     .button {
       display: inline-block;
       margin: 15px 10px;
@@ -99,14 +112,8 @@
       box-shadow: 0 0 10px #000;
       text-align: left;
     }
-    .pillar h3 {
-      font-size: 1.5em;
-      margin-bottom: 15px;
-    }
-    .pillar p {
-      font-size: 1em;
-      line-height: 1.5em;
-    }
+    .pillar h3 { font-size: 1.5em; margin-bottom: 15px; }
+    .pillar p { font-size: 1em; line-height: 1.5em; }
 
     .testimonials {
       max-width: 800px;
@@ -141,12 +148,18 @@
     <a href="terms.html">Terms of Use</a>
   </nav>
 
+  <!-- HEADER WITH LOGO -->
   <header>
-    <img src="logo3.png" alt="Pacific West Real Estate Group LLC Logo">
-    <h1>Full-Service Luxury Asset Management & Short-Term Rental Optimization</h1>
+    <img src="logo3.png" alt="Pacific West Real Estate Logo" class="logo">
+    <h1 class="home-title">
+      Full-Service Luxury Asset<br>
+      Management & Short-Term Rental Optimization
+    </h1>
     <div class="tagline">
       Delivering 5-star hospitality standards for premium property owners, maximizing revenue through professional staging, 24/7 concierge support, and full regulatory compliance.
     </div>
+    <a class="button" href="contact.html">Contact Us</a>
+    <a class="button" href="about.html">Learn More</a>
   </header>
 
   <div class="trust">
