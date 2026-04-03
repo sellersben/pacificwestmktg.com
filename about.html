@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>About Pacific West Real Estate Group LLC</title>
   <meta name="description" content="Learn about Pacific West Real Estate Group LLC: 25+ years of luxury property management, maximizing short-term rental revenue and guest satisfaction in Big Bear Lake, CA.">
+
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -15,7 +16,6 @@
       text-align: center;
     }
 
-    /* --- NAVIGATION BAR --- */
     nav {
       position: sticky;
       top: 0;
@@ -36,7 +36,6 @@
     }
     nav a:hover { color: #ffffff; }
 
-    /* --- HEADER --- */
     header {
       padding: 60px 20px;
     }
@@ -54,28 +53,29 @@
       margin: 0 0 20px 0;
       text-shadow: 1px 1px 2px #000;
     }
-
-    @media (max-width: 600px) {
-      .logo {
-        max-width: 140px;
-        margin-bottom: 10px;
-      }
-      .about-title {
-        font-size: 1.6em;
-        line-height: 1.3em;
-      }
-      p, li {
-        font-size: 1em;
-      }
-    }
-
-    h2 { font-size: 2em; margin-top: 40px; }
     p { font-size: 1.2em; margin: 15px auto; max-width: 800px; text-align: left; }
     ul { max-width: 800px; margin: 15px auto; text-align: left; }
     li { margin: 10px 0; font-size: 1.2em; }
+
+    @media (max-width: 600px) {
+      .logo { max-width: 140px; margin-bottom: 10px; }
+      .about-title { font-size: 1.6em; line-height: 1.3em; }
+      p, li { font-size: 1em; }
+    }
+
+    h2 { font-size: 2em; margin-top: 40px; }
+
+    /* --- FLEX BUTTON ROW --- */
+    .button-row {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
     a.button {
       display: inline-block;
-      margin: 15px 10px;
       padding: 15px 35px;
       background: #B99B5F;
       color: #0A0A0A;
@@ -83,9 +83,15 @@
       border-radius: 8px;
       font-size: 1.2em;
       font-weight: bold;
-      transition: 0.3s;
+      transition: transform 0.3s, background 0.3s;
+      max-width: 200px;
+      text-align: center;
     }
-    a.button:hover { background: #a88c50; }
+    a.button:hover { 
+      background: #a88c50; 
+      transform: translateY(-2px);
+    }
+
     section { padding: 40px 20px; }
 
     footer {
@@ -95,11 +101,11 @@
     }
     footer a { color: #B99B5F; text-decoration: none; margin: 0 10px; }
     footer a:hover { text-decoration: underline; }
+
   </style>
 </head>
 <body>
 
-  <!-- NAVIGATION BAR -->
   <nav>
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
@@ -108,7 +114,6 @@
     <a href="terms.html">Terms of Use</a>
   </nav>
 
-  <!-- HEADER WITH LOGO -->
   <header>
     <img src="logo3.png" alt="Pacific West Real Estate Logo" class="logo">
     <h1 class="about-title">
@@ -121,7 +126,7 @@
   <section>
     <h2>Elevating the Big Bear Experience</h2>
     <p>At Pacific West Real Estate Group LLC, we focus on what actually drives results for short-term rental owners: exceptional guest experiences, Five-Star reviews, and maximized profitability.</p>
-    <p>We specialize in transforming properties into high-performing assets within the competitive Big Bear Lake market. By combining high-end staging, premium amenities, and a full-suite concierge model, we ensure your home doesn’t just sit on a platform—it stands out as a premier destination.</p>
+    <p>We specialize in transforming properties into high-performing assets within the competitive Big Bear Lake market. By combining high-end staging, premium amenities, and a full-suite concierge model, we ensure your home stands out as a premier destination.</p>
     <p>Our approach is simple: Create a seamless, immersive stay. When guests feel cared for, reviews improve. When reviews improve, your ranking climbs. And when your ranking climbs, your investment flourishes.</p>
   </section>
 
@@ -150,15 +155,14 @@
     </ul>
   </section>
 
-  <section>
-    <h2>Let’s Illuminate Your Next Chapter</h2>
-    <p>If you are ready to reclaim your time while increasing your property’s potential, we are ready to lead the way. Whether it’s peak ski season or a glass-calm summer morning on the lake, we make sure your property is the highlight of the mountain.</p>
+  <section class="button-row">
     <a class="button" href="contact.html">Start a Conversation</a>
     <a class="button" href="index.html">Home</a>
   </section>
 
   <footer>
-    Pacific West Real Estate Group LLC | Big Bear Lake, CA | Phone: <a href="tel:13106477948">(310) 647-7948</a> | Email: <a href="mailto:info@pacificwestmktg.com">info@pacificwestmktg.com</a><br>
+    Pacific West Real Estate Group LLC is a registered California Limited Liability Company.<br>
+    Phone: <a href="tel:13106477948">(310) 647-7948</a> | Email: <a href="mailto:info@pacificwestmktg.com">info@pacificwestmktg.com</a><br><br>
     <a href="index.html">Home</a> | <a href="contact.html">Contact</a> | <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Use</a>
   </footer>
 
