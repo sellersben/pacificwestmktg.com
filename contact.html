@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Contact Pacific West Real Estate Group LLC</title>
   <meta name="description" content="Contact Pacific West Real Estate Group LLC to maximize your short-term rental revenue in Big Bear Lake, CA with professional management, staging, and 24/7 support.">
+
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -15,7 +16,6 @@
       line-height: 1.6em;
     }
 
-    /* --- NAVIGATION BAR --- */
     nav {
       position: sticky;
       top: 0;
@@ -34,11 +34,8 @@
       font-size: 1.1em;
       transition: 0.3s;
     }
-    nav a:hover {
-      color: #ffffff;
-    }
+    nav a:hover { color: #ffffff; }
 
-    /* --- HEADER --- */
     header {
       padding: 60px 20px;
     }
@@ -57,36 +54,35 @@
       text-shadow: 1px 1px 2px #000;
     }
 
-    /* Mobile optimization */
     @media (max-width: 600px) {
-      .logo {
-        max-width: 140px;
-        margin-bottom: 10px;
-      }
-      .contact-title {
-        font-size: 1.6em;
-        line-height: 1.3em;
-      }
+      .logo { max-width: 140px; margin-bottom: 10px; }
+      .contact-title { font-size: 1.6em; line-height: 1.3em; }
     }
 
-    p {
-      font-size: 1.2em;
-      margin: 10px auto;
-      max-width: 700px;
+    p { font-size: 1.2em; margin: 10px auto; max-width: 700px; }
+    
+    .button-row {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+      margin: 20px 0;
     }
+
     a.button {
       display: inline-block;
-      margin: 15px 10px;
-      padding: 15px 30px;
+      padding: 15px 35px;
       background: #B99B5F;
       color: #0A0A0A;
       text-decoration: none;
       border-radius: 8px;
       font-size: 1.2em;
       font-weight: bold;
-      transition: 0.3s;
+      transition: transform 0.3s, background 0.3s;
+      max-width: 200px;
+      text-align: center;
     }
-    a.button:hover { background: #a88c50; }
+    a.button:hover { background: #a88c50; transform: translateY(-2px); }
 
     form { max-width: 500px; margin: 30px auto; text-align: left; }
     input, textarea {
@@ -108,7 +104,9 @@
       transition: 0.3s;
     }
     input[type="submit"]:hover { background: #a88c50; }
+
     label { display: block; margin-top: 10px; font-weight: bold; }
+
     .success-message {
       color: #a3d9a5;
       font-weight: bold;
@@ -123,11 +121,11 @@
     }
     footer a { color: #B99B5F; text-decoration: none; margin: 0 10px; }
     footer a:hover { text-decoration: underline; }
+
   </style>
 </head>
 <body>
 
-  <!-- NAVIGATION BAR -->
   <nav>
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
@@ -136,7 +134,6 @@
     <a href="terms.html">Terms of Use</a>
   </nav>
 
-  <!-- HEADER WITH LOGO -->
   <header>
     <img src="logo3.png" alt="Pacific West Real Estate Logo" class="logo">
     <h1 class="contact-title">
@@ -145,12 +142,10 @@
     </h1>
   </header>
 
-  <!-- CONTACT INFO -->
   <p>Email: <a href="mailto:info@pacificwestmktg.com">info@pacificwestmktg.com</a></p>
   <p>Phone: <a href="tel:13106477948">(310) 647-7948</a></p>
   <p>Serving Big Bear Lake, CA | Reach out today to see how we can help your rental shine!</p>
 
-  <!-- CONTACT FORM -->
   <form action="https://formspree.io/f/xaqlbnjj" method="POST">
     <label>Name:</label>
     <input type="text" name="name" required>
@@ -170,16 +165,18 @@
     </div>
   </form>
 
-  <a class="button" href="index.html">Back to Home</a>
-  <a class="button" href="about.html">About Us</a>
+  <div class="button-row">
+    <a class="button" href="index.html">Back to Home</a>
+    <a class="button" href="about.html">About Us</a>
+  </div>
 
   <footer>
-    Pacific West Real Estate Group LLC | Big Bear Lake, CA | Phone: <a href="tel:13106477948">(310) 647-7948</a> | Email: <a href="mailto:info@pacificwestmktg.com">info@pacificwestmktg.com</a><br>
+    Pacific West Real Estate Group LLC is a registered California Limited Liability Company.<br>
+    Phone: <a href="tel:13106477948">(310) 647-7948</a> | Email: <a href="mailto:info@pacificwestmktg.com">info@pacificwestmktg.com</a><br><br>
     <a href="index.html">Home</a> | <a href="about.html">About</a> | <a href="contact.html">Contact</a> | <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Use</a>
   </footer>
 
   <script>
-    // Show success message without leaving page
     const form = document.querySelector('form');
     const successMessage = document.getElementById('successMessage');
     form.addEventListener('submit', function(e){
