@@ -5,6 +5,7 @@
   <title>Pacific West Real Estate Group LLC</title>
   <meta name="description" content="Pacific West Real Estate Group LLC helps short-term rental owners in Big Bear Lake, CA maximize revenue with professional staging, 24/7 guest support, and regulatory compliance.">
   <meta name="keywords" content="Short term rentals, Airbnb, VRBO, Home staging, Rental marketing, Big Bear Lake, CA">
+
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -17,7 +18,6 @@
       overflow-x: hidden;
     }
 
-    /* --- NAVIGATION BAR --- */
     nav {
       position: sticky;
       top: 0;
@@ -38,7 +38,6 @@
     }
     nav a:hover { color: #ffffff; }
 
-    /* --- HERO SECTION --- */
     header {
       position: relative;
       padding: 100px 20px 80px 20px;
@@ -83,10 +82,17 @@
       100% { opacity: 1; transform: translateY(0);}
     }
 
-    /* --- BUTTONS --- */
+    /* --- FLEX CONTAINER FOR HERO BUTTONS --- */
+    .hero-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 20px;
+      flex-wrap: nowrap;
+    }
+
     .button {
       display: inline-block;
-      margin: 10px 10px;
       padding: 15px 35px;
       background: #B99B5F;
       color: #0A0A0A;
@@ -95,6 +101,8 @@
       font-size: 1.2em;
       font-weight: bold;
       transition: transform 0.3s, background 0.3s;
+      text-align: center;
+      max-width: 200px;
     }
     .button:hover { 
       background: #a88c50;
@@ -140,14 +148,6 @@
       line-height: 1.6em;
     }
 
-    /* --- MOBILE RESPONSIVE --- */
-    @media (max-width: 600px) {
-      .logo { max-width: 140px; margin-bottom: 10px; }
-      .home-title { font-size: 1.6em; line-height: 1.3em; }
-      .tagline, .trust, .pillar p { font-size: 1em; }
-    }
-
-    /* --- FOOTER --- */
     footer {
       background: #080808;
       padding: 30px 20px;
@@ -156,7 +156,6 @@
     footer a { color: #B99B5F; text-decoration: none; margin: 0 10px; }
     footer a:hover { text-decoration: underline; }
 
-    /* --- FLOATING CONTACT BUTTON MOBILE --- */
     .floating-contact {
       position: fixed;
       bottom: 20px;
@@ -176,12 +175,14 @@
 
     @media (max-width: 600px) {
       .floating-contact { display: block; }
+      .logo { max-width: 140px; margin-bottom: 10px; }
+      .home-title { font-size: 1.6em; line-height: 1.3em; }
+      .tagline, .trust, .pillar p { font-size: 1em; }
     }
   </style>
 </head>
 <body>
 
-  <!-- NAVIGATION BAR -->
   <nav>
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
@@ -190,7 +191,6 @@
     <a href="terms.html">Terms of Use</a>
   </nav>
 
-  <!-- HERO SECTION -->
   <header>
     <div class="overlay"></div>
     <div class="hero-content">
@@ -202,13 +202,16 @@
       <div class="tagline">
         Delivering 5-star hospitality standards for premium property owners, maximizing revenue through professional staging, 24/7 concierge support, and full regulatory compliance.
       </div>
-      <a class="button" href="contact.html">Contact Us</a>
-      <a class="button" href="about.html">Learn More</a>
+      <!-- Buttons on one line -->
+      <div class="hero-buttons">
+        <a class="button" href="contact.html">Contact Us</a>
+        <a class="button" href="about.html">Learn More</a>
+      </div>
     </div>
   </header>
 
   <div class="trust">
-    25+ Years in Business | Serving Big Bear Lake, CA | Over 50 Short-Term Rentals Managed
+    Pacific West Real Estate Group LLC is a registered California Limited Liability Company | Serving Big Bear Lake, CA | Over 50 Short-Term Rentals Managed
   </div>
 
   <div class="core-pillars">
@@ -234,11 +237,11 @@
   </section>
 
   <footer>
-    Pacific West Real Estate Group LLC | Big Bear Lake, CA | Phone: <a href="tel:13106477948">(310) 647-7948</a> | Email: <a href="mailto:info@pacificwestmktg.com">info@pacificwestmktg.com</a><br>
+    Pacific West Real Estate Group LLC is a registered California Limited Liability Company.<br>
+    Phone: <a href="tel:13106477948">(310) 647-7948</a> | Email: <a href="mailto:info@pacificwestmktg.com">info@pacificwestmktg.com</a><br><br>
     <a href="about.html">About</a> | <a href="contact.html">Contact</a> | <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Use</a>
   </footer>
 
-  <!-- FLOATING CONTACT BUTTON -->
   <a href="contact.html" class="floating-contact">Contact Us</a>
 
 </body>
