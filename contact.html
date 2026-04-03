@@ -38,9 +38,42 @@
       color: #ffffff;
     }
 
-    header { padding: 80px 20px; }
-    h1 { font-size: 3em; text-shadow: 1px 1px 2px #000; margin-bottom: 20px; }
-    p { font-size: 1.2em; margin: 10px auto; max-width: 700px; }
+    /* --- HEADER --- */
+    header {
+      padding: 60px 20px;
+    }
+    .logo {
+      max-width: 180px;
+      width: 80%;
+      height: auto;
+      margin-bottom: 15px;
+    }
+    .contact-title {
+      font-size: 2.2em;
+      line-height: 1.2em;
+      letter-spacing: 0.5px;
+      font-weight: 600;
+      margin: 0;
+      text-shadow: 1px 1px 2px #000;
+    }
+
+    /* Mobile optimization */
+    @media (max-width: 600px) {
+      .logo {
+        max-width: 140px;
+        margin-bottom: 10px;
+      }
+      .contact-title {
+        font-size: 1.6em;
+        line-height: 1.3em;
+      }
+    }
+
+    p {
+      font-size: 1.2em;
+      margin: 10px auto;
+      max-width: 700px;
+    }
     a.button {
       display: inline-block;
       margin: 15px 10px;
@@ -103,14 +136,21 @@
     <a href="terms.html">Terms of Use</a>
   </nav>
 
+  <!-- HEADER WITH LOGO -->
   <header>
-    <h1>Contact Pacific West Real Estate Group LLC</h1>
+    <img src="logo3.png" alt="Pacific West Real Estate Logo" class="logo">
+    <h1 class="contact-title">
+      Contact<br>
+      Pacific West Real Estate
+    </h1>
   </header>
 
+  <!-- CONTACT INFO -->
   <p>Email: <a href="mailto:info@pacificwestmktg.com">info@pacificwestmktg.com</a></p>
   <p>Phone: <a href="tel:13106477948">(310) 647-7948</a></p>
   <p>Serving Big Bear Lake, CA | Reach out today to see how we can help your rental shine!</p>
 
+  <!-- CONTACT FORM -->
   <form action="https://formspree.io/f/xaqlbnjj" method="POST">
     <label>Name:</label>
     <input type="text" name="name" required>
